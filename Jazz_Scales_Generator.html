@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <script type="text/javascript" src="https://npmcdn.com/vexflow@1.2.89/releases/vexflow-debug.js"></script>
+
+</head>
+
+<body class="bg-body">
+    <div class="container">
+        <div class="text-white mt-5" id="scale-text">
+        </div>
+        <div class="row">
+            <div class=" bg-white d-flex align-items-center justify-content-center " id="all">
+                <h1 class="text-dark">Jazz Scale Generator</h1>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container text-center">
+        <h1 class="m-4 text-white">SELECT THE KEY AND TYPE OF SCALE</h1>
+
+        <div class="container">
+
+
+            <div class=" row justify-content-md-center align-items-start">
+                <div class="col-lg-auto">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <button type="button" name="tonation" class="btn button-flat btn-lg">Cb</button>
+                        <button type="button" name="tonation" class="btn button-flat btn-lg">Gb</button>
+                        <button type="button" name="tonation" class="btn button-flat btn-lg">Db</button>
+                        <button type="button" name="tonation" class="btn button-flat btn-lg">Ab</button>
+                        <button type="button" name="tonation" class="btn button-flat btn-lg">Eb</button>
+                        <button type="button" name="tonation" class="btn button-flat btn-lg">Bb</button>
+                        <button type="button" name="tonation" class="btn button-flat btn-lg">F </button>
+                        <button type="button" name="tonation" class="btn btn-dark btn-lg">C </button>
+                        <button type="button" name="tonation" class="btn button-sharp btn-lg">G </button>
+                        <button type="button" name="tonation" class="btn button-sharp btn-lg">D </button>
+                        <button type="button" name="tonation" class="btn button-sharp btn-lg">A </button>
+                        <button type="button" name="tonation" class="btn button-sharp btn-lg">E </button>
+                        <button type="button" name="tonation" class="btn button-sharp btn-lg">B </button>
+                        <button type="button" name="tonation" class="btn button-sharp btn-lg">F#</button>
+                        <button type="button" name="tonation" class="btn button-sharp btn-lg">C#</button>
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- classList.Add or classList.toggle to make two buttons active -->
+        <div class="container">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <button type="button" name="kind" class="btn button-scale btn-lg" id="majScale">Major Scale</button>
+                <button type="button" name="kind" class="btn button-scale btn-lg" id="minScale">Minor Scale</button>
+                <button type="button" name="kind" class="btn button-scale btn-lg" id="majPent">Major
+                    Pentatonic</button>
+                <button type="button" name="kind" class="btn button-scale btn-lg" id="minPent">Minor
+                    Pentatonic</button>
+
+                <button type="button" name="kind" class="btn button-scale btn-lg" id="bluesScale">Blues Scale</button>
+                <button type="button" name="kind" class="btn button-scale btn-lg" id="dimishedScale">Dimished
+                    Scale</button>
+                <button type="button" name="kind" class="btn button-scale btn-lg" id="alteredScale">Altered
+                    Scale</button>
+                <button type="button" name="kind" class="btn button-scale btn-lg" id="jewishScale">Jewish Scale</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container text-center p-5">
+        <button class="btn button-reset" id='newScaleBtn'>NEW SCALE</button>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="src/app.js" async defer></script>
+
+</body>
+
+</html>
